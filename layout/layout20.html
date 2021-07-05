@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리</title>
+    <style>
+        body {background-color: #0d47a1;}
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        /* 화면 너비가 1201~1920px */
+        @media (max-width: 1920px){
+            body {background-color: #ad1457;}
+            h1::after{content:"화면 너비가 0~1920px";}
+        }
+        /* 화면 너비가 1025~1200px */
+        @media (max-width: 1200px){
+            body {background-color: #f1a312;}
+            h1::after{content:"화면 너비가 0~1200px";}
+        }
+        /* 화면 너비가 769~1024px */
+        @media (max-width: 1024px){
+            body {background-color: #e8f312;}
+            h1::after{content:"화면 너비가 0~1024px";}
+        }
+        /* 화면 너비가 361~768px */
+        @media (max-width: 768px){
+            body {background-color: #27e716;}
+            h1::after{content:"화면 너비가 0~768px";}
+        }
+        /* 화면 너비가 0~360px */
+        @media (max-width: 360px){
+            body {background-color: #270bf8;}
+            h1::after{content:"화면 너비가 0~360px";}
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>미디어 쿼리</h1>
+    <p>미디어쿼리는 화면 크기에 따른 각각의 속성 값을 지정하여, 여러가지 화면을구성하는 기술입니다.</p>
+</body>
+
+</html>

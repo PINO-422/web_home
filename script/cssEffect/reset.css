@@ -1,0 +1,51 @@
+/*여백 초기화*/
+body,
+div,
+dl,
+dd,
+dt,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+legend,
+textarea,
+select,
+fieldset,
+p,
+butten,
+input,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+/*링크 초기화*/
+a {
+    color: #273743;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #390;
+}
+
+/*폰트 초기화*/
+body,
+input,
+textarea,
+select,
+button,
+table {
+    font-family: 'ELAND_Choice_M';
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/*제목 스타일 초기화*/
+h1,h2,h3,h4,h5,h6{font-size: 12px;font-weight: normal;}

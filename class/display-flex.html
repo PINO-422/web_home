@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display : flex</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
+
+        @font-face {
+            font-family: 'BBTreeTR';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeTR.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: normal;
+        }
+
+        body {
+            height: 10000px;
+            background: #f4b861;
+        }
+
+        em {
+            font-style: normal;
+        }
+
+        #wrap {
+            padding: 3vw;
+        }
+
+        .contents {
+            height: 800px;
+        }
+
+        .contents .title {
+            margin-bottom: 25px;
+
+        }
+
+        .contents .title strong {
+            font-family: 'BBTreeTR';
+            border: 3px solid #762917;
+            border-radius: 40px;
+            padding: 7px 20px;
+            color: #762917;
+            background: #fff;
+            margin-right: 10px;
+            font-size: 22px;
+        }
+
+        .content {
+            background: #fdf2e0;
+            border: 4px solid #762917;
+            text-align: center;
+            padding: 130px 0;
+            position: relative;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+
+        .content.tit {
+            margin-top: 200px;
+            background: #fff;
+        }
+
+        .content::before {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background: #762917;
+            position: absolute;
+            left: 0;
+            bottom: 6px;
+        }
+
+        .content::after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background: #762917;
+            position: absolute;
+            left: 0;
+            bottom: 16px;
+        }
+
+        .content .inner {}
+
+        .content h2 {
+            font-size: 100px;
+            font-family: 'Black Han Sans';
+            color: #fff;
+            text-transform: uppercase;
+            -webkit-text-stroke: 3px #762917;
+            font-weight: normal;
+            letter-spacing: -1px;
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+            padding-top: 20px;
+        }
+
+        .content h2::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            bottom: 18px;
+            width: 100%;
+            height: 30px;
+            background: #ffa439;
+            border: 1px solid #762917;
+            z-index: -1;
+            border-radius: 30px;
+            ;
+        }
+
+        .content h1 {
+            font-size: 180px;
+            line-height: 1.4;
+            font-family: 'Black Han Sans';
+            font-weight: normal;
+            color: #e5774f;
+            -webkit-text-stroke: 3px #762917;
+            letter-spacing: -10px;
+        }
+
+        .content h1 strong {
+            font-weight: normal;
+            color: #ffa439;
+        }
+
+        .content p {
+            font-family: 'BBTreeTR';
+            color: #9e513c;
+            font-size: 36px;
+        }
+
+        .content p em {
+            color: #c54435;
+        }
+
+        .content.tit {
+            margin-top: 200px;
+            background: #fff;
+        }
+
+        .content-title {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5%;
+        }
+
+        .content-title h3 {
+            width: 25%;
+            border: 4px solid #762917;
+            font-family: 'Black Han Sans';
+            font-size: 50px;
+            color: #762917;
+            padding-top: 8px;
+            position: relative;
+            padding-left: 50px;
+        }
+
+        .content-title h3::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50px;
+            height: 100%;
+            background: #C54435;
+        }
+
+        .content-title h3::after {
+            content: '';
+            position: absolute;
+            left: 50px;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: #762917;
+        }
+
+        .content-title p {
+            width: 65%;
+            text-align: left;
+            font-size: 30px;
+            line-height: 1.2;
+        }
+
+        .content-title p {}
+
+        .dog {
+            position: absolute;
+            left: 400px;
+            top: 150px;
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+        }
+
+        .dog:before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.03);
+            transform: translateY(-30%) scale(1.5);
+        }
+
+        .dog * {
+            position: absolute;
+        }
+
+        .dog-body {
+            top: -50%;
+            -webkit-animation: dog-body 200ms ease-in-out infinite alternate;
+            animation: dog-body 200ms ease-in-out infinite alternate;
+        }
+
+        .dog-body:before {
+            content: "";
+            position: absolute;
+            bottom: 90%;
+            right: 50%;
+            width: 90%;
+            height: 90%;
+            border-top-left-radius: 100%;
+            border-bottom-left-radius: 10%;
+            border-top-right-radius: 10%;
+            background: rgba(255, 255, 255, 0.4);
+            transform-origin: right bottom;
+            -webkit-animation: dog-tail-blur 200ms 33.3333333333ms ease-in-out infinite alternate both;
+            animation: dog-tail-blur 200ms 33.3333333333ms ease-in-out infinite alternate both;
+        }
+
+        @-webkit-keyframes dog-tail-blur {
+            from {
+                transform: rotate(0);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            to {
+                transform: rotate(90deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes dog-tail-blur {
+            from {
+                transform: rotate(0);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            to {
+                transform: rotate(90deg);
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes dog-body {
+            from {
+                transform: translateX(-10%);
+            }
+
+            to {
+                transform: translateX(10%);
+            }
+        }
+
+        @keyframes dog-body {
+            from {
+                transform: translateX(-10%);
+            }
+
+            to {
+                transform: translateX(10%);
+            }
+        }
+
+        .dog-head {
+            -webkit-animation: dog-head 1800ms cubic-bezier(0.11, 0.79, 0, 0.99) infinite;
+            animation: dog-head 1800ms cubic-bezier(0.11, 0.79, 0, 0.99) infinite;
+        }
+
+        @-webkit-keyframes dog-head {
+
+            from,
+            to {
+                transform: rotate(45deg);
+            }
+
+            33.3% {
+                transform: rotate(-45deg);
+            }
+
+            66.6% {
+                transform: rotate(0);
+            }
+        }
+
+        @keyframes dog-head {
+
+            from,
+            to {
+                transform: rotate(45deg);
+            }
+
+            33.3% {
+                transform: rotate(-45deg);
+            }
+
+            66.6% {
+                transform: rotate(0);
+            }
+        }
+
+        .dog-torso {
+            top: -20%;
+            animation: dog-torso 200ms ease-in-out infinite alternate-reverse;
+        }
+
+        @-webkit-keyframes dog-torso {
+            from {
+                transform: translateX(-5%);
+            }
+
+            to {
+                transform: translateX(5%);
+            }
+        }
+
+        @keyframes dog-torso {
+            from {
+                transform: translateX(-5%);
+            }
+
+            to {
+                transform: translateX(5%);
+            }
+        }
+
+        .dog-eyes {
+            width: 60%;
+            top: 55%;
+            left: 20%;
+            z-index: 1;
+        }
+
+        .dog-eyes:before {
+            content: "";
+            display: block;
+            height: 40px;
+            width: 40px;
+            border-radius: 40px;
+            position: absolute;
+            background: orange;
+            top: -10px;
+            left: -10px;
+            z-index: 0;
+            border: 4px solid white;
+            border-left-width: 0;
+            border-bottom-width: 0;
+            border-top-width: 0;
+            transform: rotate(-45deg);
+        }
+
+        .dog-eye {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #000;
+            z-index: 1;
+            -webkit-animation: dog-eye 1800ms infinite;
+            animation: dog-eye 1800ms infinite;
+        }
+
+        @-webkit-keyframes dog-eye {
+
+            from,
+            to {
+                -webkit-animation-timing-function: step-end;
+                animation-timing-function: step-end;
+                opacity: 1;
+            }
+
+            50%,
+            55% {
+                -webkit-animation-timing-function: step-start;
+                animation-timing-function: step-start;
+                opacity: 0;
+            }
+        }
+
+        @keyframes dog-eye {
+
+            from,
+            to {
+                -webkit-animation-timing-function: step-end;
+                animation-timing-function: step-end;
+                opacity: 1;
+            }
+
+            50%,
+            55% {
+                -webkit-animation-timing-function: step-start;
+                animation-timing-function: step-start;
+                opacity: 0;
+            }
+        }
+
+        .dog-eye:first-child {
+            left: 0;
+        }
+
+        .dog-eye:last-child {
+            right: 0;
+        }
+
+        .dog-muzzle {
+            width: 60%;
+            left: 20%;
+            height: 50%;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+            background: white;
+            bottom: -15%;
+        }
+
+        .dog-muzzle:before,
+        .dog-muzzle:after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+
+        .dog-muzzle:before {
+            width: 6px;
+            height: 20px;
+            bottom: 0;
+            left: calc(50% - 3px);
+            background: #EAEBEC;
+        }
+
+        .dog-muzzle:after {
+            background: black;
+            width: 20px;
+            height: 15px;
+            bottom: 12px;
+            left: calc(50% - 10px);
+            border-bottom-left-radius: 60% 60%;
+            border-bottom-right-radius: 60% 60%;
+            border-top-left-radius: 50% 40%;
+            border-top-right-radius: 50% 40%;
+        }
+
+        .dog-tongue {
+            width: 40px;
+            height: 100%;
+            left: calc(50% - 20px);
+            z-index: -1;
+            transform-origin: center top;
+            -webkit-animation: dog-tongue 1800ms -50ms ease-in-out infinite;
+            animation: dog-tongue 1800ms -50ms ease-in-out infinite;
+        }
+
+        @-webkit-keyframes dog-tongue {
+
+            from,
+            to {
+                transform: rotate(0);
+            }
+
+            16.6666666667% {
+                transform: rotate(30deg);
+            }
+
+            33.3333333333%,
+            66.6666666667% {
+                transform: rotate(0);
+            }
+
+            50%,
+            83.3333333333% {
+                transform: rotate(-20deg);
+            }
+        }
+
+        @keyframes dog-tongue {
+
+            from,
+            to {
+                transform: rotate(0);
+            }
+
+            16.6666666667% {
+                transform: rotate(30deg);
+            }
+
+            33.3333333333%,
+            66.6666666667% {
+                transform: rotate(0);
+            }
+
+            50%,
+            83.3333333333% {
+                transform: rotate(-20deg);
+            }
+        }
+
+        .dog-tongue:before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 40px;
+            background: #FD3163;
+            -webkit-animation: dog-tongue-inner 100ms ease-in-out infinite alternate;
+            animation: dog-tongue-inner 100ms ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes dog-tongue-inner {
+            from {
+                transform: translateY(5%);
+            }
+
+            to {
+                transform: translateY(22%);
+            }
+        }
+
+        @keyframes dog-tongue-inner {
+            from {
+                transform: translateY(5%);
+            }
+
+            to {
+                transform: translateY(22%);
+            }
+        }
+
+        .dog-ears {
+            width: 40%;
+            top: 25%;
+            left: 30%;
+            -webkit-animation: dog-ears 1800ms 100ms ease infinite;
+            animation: dog-ears 1800ms 100ms ease infinite;
+        }
+
+        @-webkit-keyframes dog-ears {
+
+            42.3%,
+            71.6% {
+                transform: rotate(-5deg);
+            }
+
+            50.3%,
+            79.6% {
+                transform: rotate(5deg);
+            }
+
+            5% {
+                transform: rotate(5deg);
+            }
+
+            12% {
+                transform: rotate(-5%);
+            }
+
+            from,
+            33.3%,
+            66%,
+            to {
+                transform: rotate(0);
+            }
+        }
+
+        @keyframes dog-ears {
+
+            42.3%,
+            71.6% {
+                transform: rotate(-5deg);
+            }
+
+            50.3%,
+            79.6% {
+                transform: rotate(5deg);
+            }
+
+            5% {
+                transform: rotate(5deg);
+            }
+
+            12% {
+                transform: rotate(-5%);
+            }
+
+            from,
+            33.3%,
+            66%,
+            to {
+                transform: rotate(0);
+            }
+        }
+
+        .dog-ear {
+            bottom: -10px;
+            height: 50px;
+            width: 50px;
+            background: #EAEBEC;
+            -webkit-animation-duration: 400ms;
+            animation-duration: 400ms;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        }
+
+        .dog-ear:first-child {
+            border-bottom-left-radius: 80%;
+            border-top-right-radius: 80%;
+            right: 100%;
+            box-shadow: inset -15px 15px 0 1px white;
+            transform-origin: right bottom;
+            transform: rotate(10deg);
+        }
+
+        .dog-ear:last-child {
+            border-top-left-radius: 80%;
+            border-bottom-right-radius: 80%;
+            left: 100%;
+            box-shadow: inset 15px 15px 0 0 white;
+            transform-origin: left bottom;
+            transform: rotate(-10deg);
+        }
+
+        .dog-tail {
+            width: 22px;
+            height: 24.2px;
+            background: white;
+            bottom: 40%;
+            border-radius: 11px;
+            left: calc(50% - 11px);
+            transform-origin: center bottom;
+        }
+
+        .dog-tail .dog-tail {
+            -webkit-animation: dog-tail-segment 200ms ease-in-out infinite alternate;
+            animation: dog-tail-segment 200ms ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes dog-tail-segment {
+            from {
+                transform: rotate(-10deg);
+            }
+
+            to {
+                transform: rotate(10deg);
+            }
+        }
+
+        @keyframes dog-tail-segment {
+            from {
+                transform: rotate(-10deg);
+            }
+
+            to {
+                transform: rotate(10deg);
+            }
+        }
+
+        .dog-body>.dog-tail {
+            bottom: 90%;
+            -webkit-animation: dog-tail 200ms ease-in-out infinite alternate;
+            animation: dog-tail 200ms ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes dog-tail {
+            from {
+                transform: rotate(-45deg);
+            }
+
+            to {
+                transform: rotate(45deg);
+            }
+        }
+
+        @keyframes dog-tail {
+            from {
+                transform: rotate(-45deg);
+            }
+
+            to {
+                transform: rotate(45deg);
+            }
+        }
+
+        .dog-body,
+        .dog-torso,
+        .dog-head {
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        .dog-body,
+        .dog-torso {
+            box-shadow: inset 0 -15px 0 0 #EAEBEC;
+        }
+
+        @media(max-width : 800px){
+            .content h1{
+                font-size: 4.2em;
+            }
+            .content p{
+                font-size: 1.2em;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <section class="contents">
+            <p class="title"><strong>라인 초등학교 CSS 수업</strong><strong>조재형</strong></p>
+            <section class="content">
+                <div class="dog-wrap">
+                    <div class="dog">
+                        <div class="dog-body">
+                            <div class="dog-tail">
+                                <div class="dog-tail">
+                                    <div class="dog-tail">
+                                        <div class="dog-tail">
+                                            <div class="dog-tail">
+                                                <div class="dog-tail">
+                                                    <div class="dog-tail">
+                                                        <div class="dog-tail"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dog-torso"></div>
+                        <div class="dog-head">
+                            <div class="dog-ears">
+                                <div class="dog-ear"></div>
+                                <div class="dog-ear"></div>
+                            </div>
+                            <div class="dog-eyes">
+                                <div class="dog-eye"></div>
+                                <div class="dog-eye"></div>
+                            </div>
+                            <div class="dog-muzzle">
+                                <div class="dog-tongue"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner">
+                    <h2>display</h2>
+                    <h1><em>디스플레이</em> <strong>플렉스</strong></h1>
+                    <p>사이트의 레이아웃은 어떻게 작업할까요? / <em>코딩책 28쪽</em></p>
+                </div>
+            </section>
+
+            <section class="content tit">
+                <div class="content-title">
+                    <h3>학습 주제</h3>
+                    <p>Flexbox는 모던 웹을 위하여 제안된 기존 레이아웃보다 더 세련된 방식의<br>
+                        니즈를 부합하기 위한 CSS3의 새로운 레이아웃 방식입니다.</p>
+                </div>
+
+            </section>
+        </section>
+    </div>
+</body>
+
+</html>

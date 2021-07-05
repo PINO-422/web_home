@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #header {
+            width: 100%;
+            height: 100px;
+            background-color: #FCE4EC ;
+        }
+        #banner {
+            width: 100%;
+            height: 300px;
+            background-color: #EF9A9A ;
+        }
+        #content {
+            width: 100%;
+            height: 600px;
+            background-color: #EC407A ;
+        }
+        #footer {
+            width: 100%;
+            height: 100px;
+            background-color: #AD1457 ;
+        }
+        .container {
+            width: 800px;
+            height: inherit;
+            background-color: rgba(255 ,255, 255, 0.2);
+            margin: 0 auto;
+        }
+        .cont1 {
+            width: 800px;
+            height: 300px;
+            background-color: #FFCDD2  ;
+            margin: 0 auto;
+        }
+        .cont2 {
+            width: 400px;
+            height: 300px;
+            background-color: #FF8A80   ;
+            margin: 0 auto;
+            float: left;
+        }
+        .cont3 {
+            width: 400px;
+            height: 300px;
+            background-color: #F44336  ;
+            margin: 0 auto;
+            float: right;
+        }
+        .cont4 {
+            width: 180px;
+            height: 80px;
+            background-color: #7E57C2   ;
+            float: left;
+            margin: 10px;
+        }
+        .cont5 {
+            width: 180px;
+            height: 80px;
+            background-color: #7E57C2   ;
+            float: left;
+            margin: 10px;
+        }
+        .cont6 {
+            width: 180px;
+            height: 80px;
+            background-color: #7E57C2  ;
+            float: left;
+            margin: 10px;
+        }
+        .cont7 {
+            width: 180px;
+            height: 80px;
+            background-color: #7E57C2  ;
+            float: left;
+            margin: 10px;
+        }
+        li {
+            list-style: url(../webstandard/img/dot.gif);
+            margin-left: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+        div h4 {
+            color: #9970E1;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        div ul {
+            position: relative;
+        }
+        div ul a {
+            float: right;
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="header">
+            <div class="container"></div>
+        </div>
+        <div id="banner">
+            <div class="container"></div>
+        </div>
+        <div id="content">
+            <div class="container">
+                <div class="cont1"></div>
+                <div class="cont2">
+                    <div>
+                        <ul>
+                            <h4>Web Publisher Notice</h4>
+                            <li>고양이는 귀엽습니다.</li>
+                            <li>저는 고양이를 좋아합니다.</li>
+                            <li>고양이가 세상에서 제일 귀엽습니다.</li>
+                            <li>모두 함께 고양이를 좋아합시다.</li>
+                            <li>고양이가 세계 최고입니다.</li>
+                            <a href="#c">더보기</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cont3"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <div class="cont4"></div>
+                <div class="cont5"></div>
+                <div class="cont6"></div>
+                <div class="cont7"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

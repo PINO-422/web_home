@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu_Effect01</title>
+    <style>
+        @font-face {
+            font-family: 'EBSHunminjeongeumSBA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/EBSHunminjeongeum.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* :root{
+            font-size:26px ;
+        } */
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            position: relative;
+            background: url(img/img_h03.png)no-repeat center center;
+            background-size: cover;
+            background-color: rgb(167, 224, 233);
+            background-blend-mode: darken;
+            /*2개의 색을 합성*/
+            height: 100vh;
+            /*디바이스에서 100등분해서 100개를 채웠다 */
+            font-size: 16px;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(28, 39, 40, 0.2);
+            z-index: -1;
+        }
+
+        /* info */
+        .info {
+            position: absolute;
+            color: #fff;
+            font-family: 'EBSHunminjeongeumSBA';
+        }
+
+        .info.left {
+            left: 20px;
+            top: 20px;
+        }
+
+        .info.right {
+            right: 20px;
+            top: 20px;
+        }
+
+        .info.bottom {
+            left: 20px;
+            bottom: 20px;
+        }
+
+        .info ul {}
+
+        .info li {
+            font-size: 1rem;
+            /*rem : root의 값을 상속시킴  em: 보모폰트 상속*/
+            line-height: 1.4;
+            list-style: none;
+        }
+
+        .info li a {
+            text-decoration: none;
+            color: #fff;
+            border: 1px dashed #fff;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            display: inline-block;
+            font-size: 0.8rem;
+            margin: 3px;
+        }
+
+        .info li a.active {
+            background: #fff;
+            color: #000;
+        }
+        .info li a:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        @media(max-width:600px) {
+            body{font-size: 12px;}
+            .info.right {
+                display: none;
+            }
+        }
+
+        /*option*/
+        #tab-menu {
+            font-family: 'EBSHunminjeongeumSBA';
+            max-width: 600px;
+            background: #eaa110;
+            position: absolute;
+            left: 50%;
+            top: 20vh;
+            transform: translate(-50%);
+            border-radius: 5px;
+        }
+
+        #tab-btn ul {
+            display: flex;
+        }
+
+        #tab-btn li {
+            flex-basis: 20%;
+            text-align: center;
+            list-style: none;
+        }
+
+        #tab-btn li a {
+            text-decoration: none;
+            color: #fff;
+            padding:1.5em 1.5em 1em 1.5em;
+            display: block;
+        }
+
+        #tab-btn li.active a {
+            border-bottom: 3px solid #2b110e;
+            color: #2b110e;
+        }
+
+        #tab-cont {
+            background: #fff;
+            padding: 20px;
+            border-radius: 0 0 5px 5px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        #tab-cont>div {
+            display: none;
+        }
+
+        #tab-cont>div:nth-child(1) {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="info left">
+        <h1>Teb_Menu_Effect01-jQuery</h1>
+        <p>탭 메뉴 이펙트</p>
+    </div>
+
+    <nav class="info right">
+        
+        <ul>                                                    
+            <li><a  class="active"href="menuEffect01-jquery.html">1</a> <a href="menuEffect01-javascript.html">1</a></li>
+            <li><a href="menuEffect02-jquery.html">2</a> <a href="menuEffect02-javascript.html">2</a></li>
+            <li><a href="menuEffect03-jquery.html">3</a> <a href="menuEffect03-javascript.html">3</a></li>
+            <li><a href="menuEffect04-jquery.html">4</a> <a href="menuEffect04-javascript.html">4</a></li>
+            <li><a href="menuEffect05-jquery.html">5</a> <a href="menuEffect05-javascript.html">5</a></li>
+            <li><a href="menuEffect06-jquery.html">6</a> <a href="menuEffect06-javascript.html">6</a></li>
+            <li><a href="menuEffect07-jquery.html">7</a> <a href="menuEffect07-javascript.html">7</a></li>
+            <li><a href="menuEffect08-jquery.html">8</a> <a href="menuEffect08-javascript.html">8</a></li>
+            <li><a href="menuEffect09-jquery.html">9</a> <a href="menuEffect09-javascript.html">9</a></li>
+            <li><a href="menuEffect10-jquery.html">10</a> <a href="menuEffect10-javascript.html">10</a></li>
+        </ul>
+    </nav>
+
+    <!--contenrs-->
+    <section class="contents">
+        <div id="tab-menu">
+            <div id="tab-btn">
+                <ul>
+                    <li class="active"><a href="#">Tab1</a></li>
+                    <li><a href="#">Tab2</a></li>
+                    <li><a href="#">Tab3</a></li>
+                    <li><a href="#">Tab4</a></li>
+                    <li><a href="#">Tab5</a></li>
+                </ul>
+            </div>
+            <div id="tab-cont">
+                <div>1. 국내 증시가 횡보하고 있지만 '동학개미운동'의 열기는 식지 않았다. 개미(개인투자자)들은 국내 증시에서 삼성전자(81,600 +0.12%)를 여전히 사들이고 있다. 삼성전자
+                    주가가 큰 폭으로 떨어질 때마다 빠르게 주워담았다.</div>
+
+                <div>2. 인들의 이러한 저가매수가 빛을 발할지 주목된다. 여의도 증권가에서는 삼성전자에 대해 긍정적인 분석을 내놓고 있다. 올 1분기 실적이 양호할 것으로 예상되는 데다 메모리
+                    반도체 슈퍼사이클과 강화된 주주환원 정책으로 인한 상승 동력이 유효하다는 판단이다.</div>
+
+                <div>3. 30일 한국거래소에 따르면 이달 들어 지난 26일까지 개인들은 국내증시(코스피·코스닥·코넥스)에서 6조7000억원의 순매수를 기록 중이다. 기관이 4조8000억원, 외국인이
+                    1조5000억원 팔고 있는 것과는 대조적인 흐름이다.</div>
+
+                <div>4. 개인은 2월에도 9조6000억원을 사들였고 1월 역시 25조9000억원 순매수로 올해 들어 꾸준히 '사자'를 외치고 있다. 이로써 올해들어 개인들이 순매수한 금액만도
+                    42조2000억원에 달한다.</div>
+
+                <div>5. 노근창 현대차증권 리서치센터장은 "현재 인텔에게 필요한 것은 파운드리 사업 진출이 아닌 미세 공정 전환 기술 경쟁력 확보라고 보인다"며 "미국 정부가 자국 내 반도체 공장
+                    투자에 대해 대규모 혜택을 주는 것을 감안하면 인텔의 의도를 냉정하게 살펴봐야 한다"고 했다.</div>
+            </div>
+        </div>
+    </section>
+    <!--//contenrs-->
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        const tabBtn = $("#tab-btn > ul > li");
+        const tabCont = $("#tab-cont > div");
+        tabBtn.click(function(){
+            let target = $(this);
+            let index = target.index();
+            tabBtn.removeClass("active");
+            target.addClass("active");
+            tabCont.css("display", "none");
+            tabCont.eq(index).css("display", "block");
+        });
+    </script>
+    <!-- //script -->
+    </script>
+
+</body>
+
+</html>

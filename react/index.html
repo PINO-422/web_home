@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="webstoryboy">
+    <meta name="description" content="웹 퍼블리셔를 위한 정보 공유 사이트입니다.">
+    <meta name="keywords"
+        content="웹스토리보이, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, css3, html, markup, design, Webstoryboy">
+    <title>웹스토리보이 | Webstoryboy | mysql</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/docs.min.css" rel="stylesheet">
+    <link href="../assets/css/prism.css" rel="stylesheet">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon_114.png">
+    <link rel="icon" href="../assets/ico/icon.png">
+    <link rel="icon" href="../assets/ico/favicon_57.png" sizes="16x16">
+    <link rel="icon" href="../assets/ico/favicon_72.png" sizes="32x32">
+    <link rel="icon" href="../assets/ico/favicon_114.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon_114.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon_114.png" sizes="128x128">
+    <!-- Facebook meta tags -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="http://richclub8.dothome.co.kr/assets/ico/icon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+    <!-- twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="http://richclub8.dothome.co.kr/assets/ico/icon.png" />
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.../assets2/js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <a class="sr-only" href="#content">Skip to main content</a>
+    <header class="navbar navbar-inverse navbar-static-top bs-docs-nav" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../index.html" class="navbar-brand">WEB'S &lt;/doc&gt;</a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse pull-right" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://websinssa.tistory.com/">Tistory</a></li>
+                    <li><a href="https://codepen.io/webstoryboy">Codepen</a></li>
+                    <li><a href="https://github.com/webstoryboy/dothome1">Github</a></li>
+                    <li><a href="https://www.figma.com/@874463">Figma</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="bs-header bgs1" id="content">
+        <div class="container">
+            <h1>ILLUSTRATOR Reference v1.0 &lt;/doc&gt;</h1>
+            <p><a href="https://webstoryboy.co.kr" target="_blank">webstoryboy.co.kr</a></p>
+        </div>
+    </div>
+    <div class="container bs-docs-container">
+        <div class="row">
+
+            <!--쿠팡 광고-->
+            <div class="row" style="margin:10px 0 30px">
+                <script src="https://ads-partners.coupang.com/g.js"></script>
+                <script>
+                    new PartnersCoupang.G({
+                        "id": 457662,
+                        "template": "carousel",
+                        "trackingCode": "AF8947519",
+                        "width": "1135",
+                        "height": "140"
+                    });
+                </script>
+            </div>
+
+            <!--쿠팡 광고-->
+
+            <div class="col-md-9" role="main">
+
+                <!-- Intro1 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro1" class="page-header">React</h2>
+                    <p class="lead">리액트는 사용자 인터페이스를 만들기 위한 JavaScript 라이브러리입니다.</p>
+                    <p>
+                        리액트(React, React.js 또는 ReactJS)는 자바스크립트 라이브러리의 하나로서 사용자 인터페이스를 만들기
+                        위해 사용됩니다. 페이스북과 개별 개발자 및 기업들 공동체에 의해 유지보수됩니다.
+                        리액트는 싱글 페이지 애플리케이션이나 모바일 애플리케이션 개발에 사용될 수 있습니다.
+                        대규모 또는 복잡한 리액트 애플리케이션 개발에는 보통 라우팅, API통신 등의 기능이 요구되는데
+                        리액트에는 기본적으로 제공되지 않기 때문에 추가 라이브러리를 사용해야 합니다.<br>
+                        <a href="https://ko.reactjs.org/">https://ko.reactjs.org/</a>
+                    </p>
+
+                </div>
+                <!-- //Intro1 -->
+
+                <!-- Intro2 -->
+                <div class="bs-docs-section">
+                    <h2 id="intro2" class="page-header">기본 개념 익히기</h2>
+                    <h3 id="intro2-1">출력하기(index.js)</h3>
+                    <pre class="language-js"><code>import React from "react";
+import ReactDOM from "react-dom";
+
+ReactDOM.render(&lt;h1&gt;Hello&lt;/h1&gt;, document.getElementById("root"));
+</code></pre>
+                    <h3 id="intro2-1">JSX</h3>
+                    <p>JSX라 하며 JavaScript를 확장한 문법입니다.</p>
+                    <pre class="language-js"><code>import React from "react";
+import ReactDOM from "react-dom";
+
+const name = "KkingKkang";
+const element = &lt;h1&gt;hello, {name}&lt;/h1&gt;;
+
+ReactDOM.render(element, document.getElementById("root"));
+</code></pre>
+
+                    <pre class="language-js"><code>import React from "react";
+    import ReactDOM from "react-dom";
+    
+    function formatName(user) {
+        return user.firstName + user.lastName;
+    }
+    
+    const user = {
+        firstName: "Kking",
+        lastName: "Kkang",
+    };
+    
+    const element = &lt;h1&gt;Hello, {formatName(user)}&lt;/h1&gt;;
+    
+    ReactDOM.render(element, document.getElementById("root"));
+    </code></pre>
+
+                    <pre class="language-js"><code>import React from "react";
+        import ReactDOM from "react-dom";
+        
+        //업그레이드 하면서 간편하게 바뀜
+        const element = &lt;h1 className="hello"&gt;Hello, KkingKkang&lt;/h1&gt;
+        
+        //정석
+        const element = React.createElement(
+            "h1",
+            { className: "hello" },
+            "Hello, KkingKkang"
+        );
+        
+        ReactDOM.render(element, document.getElementById("root"));
+        
+        </code></pre>
+
+                    <h3 id="intro2-3">랜더링</h3>
+                    <pre class="language-js"><code>import React from "react";
+import ReactDOM from "react-dom";
+
+function clock() {
+    const element = (
+    &lt;div&gt;
+        &lt;h1&gt;Hello, KkingKkang!&lt;/h1&gt;
+        &lt;h2&gt;It is {new Date().toLocaleTimeString()}.&lt;/h2&gt;
+    &lt;/div&gt;
+    );
+    ReactDOM.render(element, document.getElementById("root"));
+}
+setInterval(clock, 1000);
+</code></pre>
+
+                    <h3 id="intro2-4">컴퍼넌트</h3>
+                    <pre class="language-js"><code>import React from "react";
+import ReactDOM from "react-dom";
+
+function Welcome(props) {
+    return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+}
+
+const element = &lt;Welcome name="KkingKkang" /&gt;;
+
+ReactDOM.render(element, document.getElementById("root"));
+</code></pre>
+
+<h3 id="intro2-5">컴퍼넌트 합성</h3>
+<pre class="language-js"><code>import React from "react";
+import ReactDOM from "react-dom";
+
+function Welcome(props) {
+    return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+}
+
+function App() {
+    return (
+    &lt;div&gt;
+        &lt;Welcome name="Kking" /&gt;
+        &lt;Welcome name="Kkang" /&gt;
+        &lt;Welcome name="Web" /&gt;
+    &lt;/div&gt;
+    );
+}
+
+ReactDOM.render(&lt;App //&gt, document.getElementById("root"));
+</code></pre>
+
+<pre class="language-js"><code>import React from "react";
+import ReactDOM from "react-dom";
+
+function formatDate(date) {
+    return date.toLocaleDateString();
+}
+
+function Comment(props) {
+    return (
+        &lt;div className="comment"&gt;
+            &lt;div className="user-info"&gt;
+            &lt;img
+                className="avatar"
+                src={props.author.avatarUrl}
+                alt={props.author.name}
+            /&gt;
+            &lt;div className="user-name"&gt;{props.author.name}&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div className="comment-text"&gt;{props.text}&lt;/div&gt;
+            &lt;div className="comment-date"&gt;{formatDate(props.date)}&lt;/div&gt;
+        &lt;/div&gt;
+    );
+}
+
+const comment = {
+    date: new Date(),
+    text: "열심히 할수록 기회는 따른다.",
+    author: {
+    name: "KkingKkang",
+    avatarUrl:"http://jjh100.dothome.co.kr/portfolio/assets/images/aboutImg01.jpg",
+    },
+};
+
+ReactDOM.render(
+    &lt;Comment date={comment.date} text={comment.text} author={comment.author} /&gt;,
+    document.getElementById("root")
+);
+</code></pre>
+
+        <pre class="language-js"><code>import React from "react";
+import ReactDOM from "react-dom";
+
+function formatDate(date) {
+    return date.toLocaleDateString();
+}
+
+function Comment(props) {
+    return (
+        &lt;div className="comment"&gt;
+            &lt;div className="user-info"&gt;
+            &lt;img
+                className="avatar"
+                src={props.author.avatarUrl}
+                alt={props.author.name}
+            /&gt;
+            &lt;div className="user-name"&gt;{props.author.name}&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div className="comment-text"&gt;{props.text}&lt;/div&gt;
+            &lt;div className="comment-date"&gt;{formatDate(props.date)}&lt;/div&gt;
+        &lt;/div&gt;
+    );
+}
+
+const comment = {
+    date: new Date(),
+    text: "열심히 할수록 기회는 따른다.",
+    author: {
+    name: "KkingKkang",
+    avatarUrl:"http://jjh100.dothome.co.kr/portfolio/assets/images/aboutImg01.jpg",
+    },
+};
+
+ReactDOM.render(
+    &lt;Comment date={comment.date} text={comment.text} author={comment.author} /&gt;,
+    document.getElementById("root")
+);
+</code></pre>
+
+<h3 id="intro2-7" class="mt30">생명주기</h3>
+<pre class="language-js"><code>import React from 'react';
+import ReactDOM from 'react-dom';
+
+function clock() {
+const element = (
+&lt;div&gt;
+&lt;h1&gt;Hello&lt;/h1&gt;
+&lt;h2&gt;지금은 {new Date().toLocaleTimeString()} 입니다.&lt;/h2&gt;
+&lt;/div&gt;
+)
+ReactDOM.render(element, document.getElementById("root"));
+}
+
+setInterval(clock, 1000);
+</code></pre>
+<pre class="language-js"><code>import React from 'react';
+import ReactDOM from 'react-dom';
+
+function Clock(props){
+return (
+&lt;div&gt;
+&lt;h1&gt;Holle&lt;/h1&gt;
+&lt;h2&gt;지금은 {props.date.toLocaleTimeString()} 입니다.&lt;/h2&gt;
+&lt;/div&gt;
+)
+}
+
+function tick(){
+ReactDOM.render(&lt;Clock date={new Date()} /&gt;, document.getElementById("root"));
+}
+
+setInterval(tick, 1000);
+</code></pre>
+
+<pre class="language-js"><code>import React from 'react';
+import ReactDOM from 'react-dom';
+
+class Clock extends React.Component {
+render(){
+return(
+&lt;div&gt;
+&lt;h1&gt;hello&lt;/h1&gt;
+&lt;h2&gt;지금은 {this.props.date.toLocaleTimeString()} 입니다.&lt;/h2&gt;
+&lt;/div&gt;
+)
+}
+}
+
+function tick(){
+ReactDOM.render(&lt;Clock date={new Date()} /&gt;, document.getElementById("root"));
+}
+
+setInterval(tick, 1000)
+</code></pre>
+
+<pre class="language-js"><code>터미널 설치
+npm install react-router-dom
+//주소 설정 
+npm install prop-types
+//변수 타입 설정
+npm install node-sass
+//사스 설치
+</code></pre>
+
+
+
+
+                </div>
+                <!-- //Intro2 -->
+
+
+
+
+            </div>
+            <!-- //col-md-9 -->
+
+
+             <!-- //col-md-3 -->
+            <div class="col-md-3">
+                <div class="bs-sidebar hidden-print" role="complementary">
+                    <ul class="nav bs-sidenav">
+                        <li><a href="#intro1">REACT</a></li>
+                        <li><a href="#intro2">기본 개념 익히기</a>
+                            <ul class="nav">
+                                <li><a href="#intro2-1">출력하기</a></li>
+                                <li><a href="#intro2-2">JSX</a></li>
+                                <li><a href="#intro2-3">랜더링</a></li>
+                                <li><a href="#intro2-4">컴퍼넌트</a></li>
+                                <li><a href="#intro2-5">컴퍼넌트 합성</a></li>
+                                <li><a href="#intro2-6">컴퍼넌트 추출</a></li>
+                                <li><a href="#intro2-6">생명주기</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!--//col-md-3 -->
+
+
+
+        </div>
+        <!-- //row -->
+    </div>
+    <!-- //container -->
+
+
+    <!-- Footer -->
+    <footer class="bs-footer" role="contentinfo">
+        <div class="container">
+            <ul class="footer-links muted">
+                <li>Currently v2.0</li>
+                <li>&middot;</li>
+                <li><a href="https://webstoryboy.github.io/w9/html/">webstoryboy</a></li>
+                <li>&middot;</li>
+                <li><a href="http://cafe.naver.com/crossbrowsing" target="_blank">publisher cafe</a></li>
+                <li>&middot;</li>
+                <li><a href="http://cafe.daum.net/flairdesignlink" target="_blank">designer cafe</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //Footer -->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../assets/js/jquery-1.9.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/docs.min.js"></script>
+    <script src="../assets/js/prism.js"></script>
+</body>
+
+</html>

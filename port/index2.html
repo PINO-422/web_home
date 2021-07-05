@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+</head>
+<body>
+
+    <div class="scroll">0</div>  
+
+    <div id="contents">
+        <section id="section1">
+            <div class="sec1"
+                data-0 = "left: 0%"
+                data-5000 = "left: -550%">
+                <div class="sec1-main">
+                    <div class="sm-text">
+                        <h1>Frontend</h1>
+                        <div class="text">
+                            <figure>
+                                <img src="http://jjh100.dothome.co.kr/portfolioKing/assets/img/mainMe.jpg" alt="나">
+                            </figure>
+                            <p>
+                                <em>#프론트 개발자 # WEB 으로 돌아온 3D엔지니어 #낑깡</em>
+                                나는 설계를 한다. 3D 프로그램 “솔리드웍스로”로 내 몸보다 큰 기계를
+                                디자인 하는 것이 본래 내 일이였다.<br> 기계를 구현하는데 있어서 많은 돈
+                                이 필요하고 사고 위험 또한 감안해야 한다.<br> 나는 이 일을 하면서
+                                나 자신보다는 상대방을 배려하는 엔지니어로
+                                성장했다. <br>이젠 하드웨어를 넘어 소프트웨어를 디자인하려 한다.<br>
+                                나를 성장 시킨 이 배려심이 상상력과 함께 공간을 열어줄 것이다.
+                                <strong>개발자 조재형</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <span class="arrow"></span>
+                </div>
+                <div class="sec1-title">
+                    <h2>portfolio</h2>
+                    <div class="img-wrap i1"
+                        data-900 = "transform: translatex(0px)"
+                        data-2500 = "transform: translatex(-100px)">
+                        <div class="img"
+                            data-900 = "left: 0%; top: -10%;"
+                            data-2500 = "left: -20%; top: -10%;"
+                        ></div>
+                    </div>
+                </div>
+                <div class="sec1-menu">
+                    <div class="last-menu"
+                        data-3500 = "left: 100%"
+                        data-4500 = "left: 0%">
+                        <div
+                            data-4500 = "width: 20vw; height: 80vh;"
+                            data-5000 = "width: 100vw; height: 100vh;"
+                        >111</div>
+                        <div
+                            data-4500 = "width: 20vw; height: 80vh;"
+                            data-5000 = "width: 0vw; height: 0vh;"
+                        >222</div>
+                        <div
+                            data-4500 = "width: 20vw; height: 80vh;"
+                            data-5000 = "width: 0vw; height: 0vh;"
+                        >333</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section1 -->
+        <section id="section2"></section><!-- //section2 -->
+        <section id="section3"></section><!-- //section3 -->
+        <section id="section4"></section><!-- //section4 -->
+        <section id="section5"></section><!-- //section5 -->
+        <section id="section6"></section><!-- //section6 -->
+    </div>
+    <!-- //contents -->
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init();
+
+        function scrollProgress(){
+            let scroll = (window.pageYOffset || document.documentElement.scrollTop);
+            console.log(window.innerHeight)
+            document.querySelector(".scroll").innerText = parseInt(scroll);
+        }
+        window.addEventListener("scroll", scrollProgress);
+    </script>
+</body>
+</html>

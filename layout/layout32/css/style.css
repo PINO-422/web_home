@@ -1,0 +1,123 @@
+/* 리셋 */
+
+*{padding: 0;margin: 0;}
+.icon{background: url(../img/sp_ico.png);}
+a,li{text-decoration: none;list-style: none;color: #000;}
+.row{margin: 20px;}
+.container{margin: 0 auto;width: 1338px;background:rgba(0,0,0,0)}
+
+/*이미지 관리*/
+.google{background: url(../img/google.png)no-repeat center center; background-size: cover; width: 54px;height: 53px;}
+.apple{background: url(../img/apple.png)no-repeat center center; background-size: cover; width: 54px;height: 53px;;}
+.inter{background: url(../img/inter.png)no-repeat center center; background-size: cover; width: 54px;height: 53px;;}
+
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: '';line-height: 0;}
+.clearfix:after {clear: both;}
+
+/* IR 효과 */
+.ir_pm {display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-9999px;} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {display:block; overflow:hidden; position:relative; z-index:2; width:100%; height: 100%;} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_so {overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+
+
+/* 레이아웃 */
+#naver_wrap{}
+#naver_nav{width: 100%;}
+#naver_banner{width: 100%;}
+#naver_content{width: 100%;}
+#naver_footer{width: 100%;height: 100px;}
+
+/* 네비 */
+.naver_nav_bg{background: url(../img/spot_bg.png)no-repeat center center;z-index: 40;}
+.naver_nav_bg .rogo{display: flex;justify-content:space-between;align-items: center;}
+.naver_nav_bg .rogo p{font-size: 30px;text-align: center;text-transform: uppercase;color: #12c964;font-weight: bold;}
+.naver_nav_bg .rogo ul{ display: flex;font-size: 25px;font-weight: bold;text-transform: uppercase; }
+.naver_nav_bg .rogo ul li{padding:30px 60px;}
+.naver_nav_bg .rogo ul li a:hover{color:#12c964;border-bottom: 3px solid #12c964;}
+.naver_nav_bg .rogo .reang{margin-right: 20px; color: #12c964; border: 1px solid #12c964;padding:15px 30px;border-radius: 50px;background-position: 120px -15px;display:inline-block; }
+.naver_nav_bg .rogo .reang span{padding-right: 50px;}
+/* 네비고정 */
+.naver_nav_bg .rogo.fix{position: fixed ;width: 100%;background-color: #fff;z-index: 10;border-bottom: 1px solid #000;}
+
+
+
+/* 배너 */
+.naver_banner{background: url(../img/spot_bg_area.png),url(../img/spot_bg.png)no-repeat ;background-size:cover;height: 700px;overflow: hidden;position: relative;}
+.naver_banner .spot1{background: url(../img/spot_ico1.png)no-repeat;width: 243px;height: 213px;background-size: contain;float: left;position: absolute;left: 50px;top: 90px;}
+.naver_banner .spot2{background: url(../img/spot_ico2.png)no-repeat;width: 513px;height: 550px;background-size: contain;float: left;position: absolute;left: 350px;top: 120px;}
+.naver_banner .spot3{background: url(../img/spot_logo.png)no-repeat;width: 339px;height: 381px;background-size: contain;float: left;position: absolute;left: 800px;top: 90px;}
+.naver_banner .spot4{background: url(../img/spot_ico3.png)no-repeat;width: 237px;height: 375px;background-size: contain;float: left;position: absolute;left: 1350px;top: 90px;}
+.naver_banner .spot5{background: url(../img/spot_ico4.png)no-repeat;width: 235px;height: 188px;background-size: contain;float: left;position: absolute;left: 1700px;top: 300px;}
+
+/*컨텐츠*/
+.naver_content{}
+.n_cont_room1{}
+
+/* 1번방 */
+.room1{}
+.room1 .room1_door1{float: left; width: 25%;height: 200px;font-size: 30px;font-weight:bolder;letter-spacing: 1px;}
+.room1 .room1_door1 h1{font-size: 50px;font-weight:bolder;letter-spacing: 1px;text-transform: uppercase;}
+.room1 .room1_door2{float: left; width: 75%;}
+.room1 .room1_door2 h1{font-size: 30px;font-weight: normal;padding-bottom: 20px;}
+.room1 .room1_door2 p{margin-bottom: 80px;font-size: 17px;line-height: 1.76;}
+.room1 .room1_door3{float: left;width: 100%;height: 200px;background: url(../img/scren.png)no-repeat center center;background-size: 100%;}
+
+/*2번방*/
+.n_cont_room2 h1{ font-size: 50px;font-weight:bolder;letter-spacing: 1px;text-transform: uppercase;margin-bottom:30px;}
+.room2{display: flex;justify-content:space-around;align-items: center;text-align: center;}
+.room2 h2{padding: 10px;}
+.room2 p{line-height: 30px;}
+.room2 ul{}
+.room2 ul li{margin: 10px;display: inline-block;}
+.room2 ul li a{}
+.room2_door1{float: left;}
+.room2_door2{float: left;}
+.room2_door3{float: left;}
+.room2_door4{float: left;}
+.room2_door5{float: left;}
+.room2_door1 .svg{display: inline-block; width: 200px;height: 200px;margin-bottom: 26px;text-align: center;}
+.room2_door2 .svg{display: inline-block; width: 200px;height: 200px;margin-bottom: 26px;text-align: center;}
+.room2_door3 .svg{display: inline-block; width: 200px;height: 200px;margin-bottom: 26px;text-align: center;}
+.room2_door4 .svg{display: inline-block; width: 200px;height: 200px;margin-bottom: 26px;text-align: center;}
+.room2_door5 .svg{display: inline-block; width: 200px;height: 200px;margin-bottom: 26px;text-align: center;}
+
+/* 3번방 */
+.room3{}
+.room3_door1{margin-top: 80px;}
+.room3_door1 h1{font-size: 50px;font-weight:bolder;letter-spacing: 1px;text-transform: uppercase;padding-bottom: 20px;}
+.room3_door1 p{font-size: 15px;font-weight:600;letter-spacing: 1px;text-transform: uppercase;padding-bottom: 20px;line-height: 23px;}
+.room3_door2{float: left;width: 50%;height: 180px; background: url(../img/studio.png)no-repeat center center;background-size: cover;}
+.room3_door3{float: left;width: 50%;height: 180px; background: url(../img/lico.png)no-repeat center center;background-size: cover;}
+.room3_door4{float: left;padding: 70px 0;}
+.room3_door4 img{width: 248px;height: 248px;display: inline-block;padding: 8px;}
+
+/* 4번방 */
+.naver_content1{background: url(../img/careers_bg.png)no-repeat ;background-size:cover;height: 830px;z-index: 3;}
+.room4_door1{font-size: 26px;font-weight:bolder;letter-spacing: 1px;text-transform: uppercase;padding-top:220px;}
+.room4_door2{margin: 40px 0 ; background: url(../img/con4.png)no-repeat center center;width: 100%;height: 361px;background-size: cover;}
+.room4_door3{text-align: center;}
+.room4_door3 a{border:1px solid #000;background: #000;color: #fff;padding: 30px 70px;border-radius: 50px; font-size: 25px;}
+
+/* 5번방 */
+.naver_content2{ background-color: #00d564;overflow: hidden;height: 773px;z-index: 1;}
+.room5{color: #fff;margin-top: 150px;}
+.room5_door1{float: left;width: 35%;}
+.room5_door1 h1{font-size: 60px;text-transform: uppercase;padding: 30px 0;}
+.room5_door1 h2{font-size: 30px;text-transform: uppercase;padding: 15px 0;}
+.room5_door1 p{font-size: 16px; word-spacing: 2px;padding-bottom: 50px;}
+.room5_door1 a{color: #fff;border: 1px solid #fff;padding: 15px 30px;font-size: 20px;border-radius: 30px;}
+.room5_door1 a em{padding-left: 45px;}
+.room5_door2{float: left;width: 65%;}
+.room5_door2 .map{
+    position: absolute;top: 0px;z-index: 2;
+    background:url(../img/map.png)no-repeat center center; width: 754px;height: 447px;background-size: cover;}
+
+/* 푸터 */
+.naver_footer{display: flex;justify-content: space-around;align-items: center;}
+.naver_footer p{}
+.naver_footer ul{display: flex;margin: 50px;}
+.naver_footer li{}
+.naver_footer li a{padding-left: 10px;}
+

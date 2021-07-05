@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 100%;
+            background: #E3F2FD;
+            margin: 0 auto;
+        }
+        #main {
+            width: 1200px;
+            height: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            width: 100%;
+            height: 200px;
+            background: #BBDEFB;
+        }
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;            
+        }
+        aside {
+            width: 20%;
+            height: 900px;
+            background: #90CAF9 ;
+            float: left;
+        }
+        .art1 {
+            width: 80%;
+            height: 300px;
+            background: #64B5F6 ;
+            float: left;
+        }
+        .art2 {
+            width: 80%;
+            height: 300px;
+            background: #42A5F5  ;
+            float: left;
+        }
+        .art3 {
+            width: 80%;
+            height: 300px;
+            background: #2196F3  ;
+            float: left;
+        }
+        footer {
+            width: 100%;
+            height: 200px;
+            background: #1976D2;
+            clear: both;
+        }
+        @media (max-width: 1200px){
+            #mian{
+                width: 100%;
+            }
+            .art1{
+                height: 450px;
+            }
+            .art2{height: 450px;}
+            .art3{
+                width: 100%;
+            }
+        }
+        @media(max-width:900px){
+            #main{
+                width: 100%;
+            }
+            aside{
+                width: 100%;
+                height: 200px;
+            }
+            .art1{
+                width: 50%;
+            }
+            .art2{
+                width: 50%;
+            }
+        }
+        @media(max-width:600px){
+            #main{
+                width: 100%;
+            }
+            aside{
+                width: 100%;
+                height: 200px;
+            }
+            .art1{
+                width: 100%;
+            }
+            .art2{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <main id="main" class="clearfix">
+            <header>head</header>
+            <aside>side</aside>
+            <article class="art1">art1</article>
+            <article class="art2">art2</article>
+            <article class="art3">art3</article>
+            <footer>foot</footer>
+        </main>
+    </div>
+</body>
+</html>

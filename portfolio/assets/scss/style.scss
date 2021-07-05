@@ -1,0 +1,21 @@
+@charset "UTF-8";
+//기본 셋팅
+
+//변수설정
+@import "variables";
+@import "mixins";
+
+//기본설정
+@import "base";
+
+//폰트 설정
+@import "fonts";
+
+//페이징 설정
+@import "pages";
+
+#mainCont {
+    height: 100vh;
+    background: #000;
+}
+

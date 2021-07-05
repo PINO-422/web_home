@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+    <style>
+        @font-face {
+            font-family: 'MapoGoldenPier';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'MapoGoldenPier';
+        }
+        #contents>section {
+            height: 100vh;
+            color: #fff;
+            font-family: 'MapoGoldenPier';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #contents>section h2 {
+            font-size: 3rem;
+            padding: 0 10vw;
+        }
+        #contents>section h2 strong {
+            font-size: 1rem;
+            padding-top: 1em;
+            display: block;
+        }
+        #section1 {
+            background: radial-gradient(ellipse farthest-corner at center top, #F39264 0%, #F2606F 100%);
+        }
+        #section2 {
+            background: radial-gradient(ellipse farthest-corner at center top, #CBF49A, #1EA623);
+        }
+        #section3 {
+            background: radial-gradient(ellipse farthest-corner at center top, #FFEE75, #FF8930);
+        }
+        #section4 {
+            background: radial-gradient(ellipse farthest-corner at center bottom, #6BEACE, #2E9AA4);
+        }
+        #section5 {
+            background: radial-gradient(ellipse farthest-corner at center bottom, #69D2FB 0%, #20438E 100%);
+        }
+        #section6 {
+            background: radial-gradient(ellipse farthest-corner at center top, #6CEBCF 0%, #38A7AA 100%);
+        }
+        #header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            display: flex;
+            justify-content: space-between;
+        }
+        #header h1 {
+            color: #fff;
+            padding: 1rem;
+        }
+        #header nav {}
+        #header nav li {
+            display: inline;
+            list-style: none;
+        }
+        #header nav li a {
+            padding: 30px 15px;
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+        }
+        .info {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 1em;
+        }
+        .info li {
+            list-style: none;
+        }
+        /* media */
+        @media (max-width: 800px) {
+            :root {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>조재형</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Menu1</a></li>
+                <li><a href="#section2">Menu2</a></li>
+                <li><a href="#section3">Menu3</a></li>
+                <li><a href="#section4">Menu4</a></li>
+                <li><a href="#section5">Menu5</a></li>
+                <li><a href="#section6">Menu6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contents">
+        <section id="section1">
+            <h2>하루에 3시간을 걸으면 7년 후에 지구를 한바퀴 돌 수 있다. <strong>사무엘존슨.</strong></h2>
+        </section>
+        <!--section1-->
+        <section id="section2">
+            <h2>언제나 현재에 집중할수 있다면 행복할것이다. <strong>파울로 코엘료</strong></h2>
+        </section>
+        <!--section2-->
+        <section id="section3">
+            <h2>신은 용기있는자를 결코 버리지 않는다 <strong>켄러 </strong></h2>
+        </section>
+        <!--section3-->
+        <section id="section4">
+            <h2>먼저 자신을 비웃어라. 다른 사람이 당신을 비웃기 전에<strong>엘사 맥스웰 </strong></h2>
+        </section>
+        <!--section4-->
+        <section id="section5">
+            <h2>계단을 밟아야 계단 위에 올라설수 있다, <strong>터키속담</strong></h2>
+        </section>
+        <!--section5-->
+        <section id="section6">
+            <h2>작은 기회로 부터 종종 위대한 업적이 시작된다 <strong>데모스테네스</strong></h2>
+        </section>
+        <!--section6-->
+    </main>
+    <aside class="info">
+        <div>scrolltop : <span class="scrollTop">0</span></div>
+        <ul>
+            <li>#section1 offset().top : <span class="s1">0</span>px</li>
+            <li>#section2 offset().top : <span class="s2">0</span>px</li>
+            <li>#section3 offset().top : <span class="s3">0</span>px</li>
+            <li>#section4 offset().top : <span class="s4">0</span>px</li>
+            <li>#section5 offset().top : <span class="s5">0</span>px</li>
+            <li>#section6 offset().top : <span class="s6">0</span>px</li>
+        </ul>
+    </aside>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        // $(".info .s1").text($("#section1").offset().top);
+        // $(".info .s2").text($("#section2").offset().top);
+        // $(".info .s3").text($("#section3").offset().top);
+        // $(".info .s4").text($("#section4").offset().top);
+        // $(".info .s5").text($("#section5").offset().top);
+        // $(".info .s6").text($("#section6").offset().top);
+        for (i = 1; i < 7; i++) {
+            $(`.s${i}`).text($(`#section${i}`).offset().top);
+        }
+        $(window).scroll(function(){
+            let scroll = parseInt( $(window).scrollTop() );
+            $(".scrollTop").text( scroll + "px");
+        });
+        // $("nav ul li").eq(0).click(function(){
+        //     alert("ddd")
+        // })
+        // $("nav ul li").eq(1).click(function(){
+        //     alert("ddd")
+        // })
+        // $("nav ul li").eq(2).click(function(){
+        //     alert("ddd")
+        // })
+        // $("nav ul li").eq(3).click(function(){
+        //     alert("ddd")
+        // })
+        // $("nav ul li").eq(4).click(function(){
+        //     alert("ddd")
+        // })
+        // $("nav ul li").eq(5).click(function(){
+        //     alert("ddd")
+        // })
+        // $("nav ul li").eq(0).click(function(){
+        //     $("html, body").animate({ scrollTop: $("#section1").offset().top }, 600)
+        // })
+        // $("nav ul li").eq(1).click(function(){
+        //     $("html, body").animate({ scrollTop: $("#section2").offset().top }, 600)
+        // })
+        // $("nav ul li").eq(2).click(function(){
+        //     $("html, body").animate({ scrollTop: $("#section3").offset().top }, 600)
+        // })
+        // $("nav ul li").eq(3).click(function(){
+        //     $("html, body").animate({ scrollTop: $("#section4").offset().top }, 600)
+        // })
+        // $("nav ul li").eq(4).click(function(){
+        //     $("html, body").animate({ scrollTop: $("#section5").offset().top }, 600)
+        // })
+        // $("nav ul li").eq(5).click(function(){
+        //     $("html, body").animate({ scrollTop: $("#section6").offset().top }, 600)
+        // })
+        //첫번째 버튼을 클릭하면 첫번째 섹션의 오프셋 값을 입력
+        $("nav ul li").click(function(e){
+            e.preventDefault();
+            let target = $(this);
+            let index = target.index();
+            let section = $("#contents > section").eq(index);
+            let offset = section.offset().top;
+            $("html, body").animate({ scrollTop: offset }, 600);
+        })
+    </script>
+</body>
+</html>

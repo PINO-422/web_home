@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>javascript13</title>
+</head>
+<body>
+    <script>
+        //화살표 함수 (es6) functiom -. =>
+        //선언적 함수 -> 화살표 함수
+
+        // function func1(){
+        //     document.write("func1이 실행되었습니다.<br>")
+        // }
+        // func1();
+
+        //화살표 함수
+
+        func1 = () =>{
+            document.write("func1이 실행되었습니다.<br>")
+        }
+        func1();
+
+        //익명함수 
+        const func2 = function(){
+            document.write("func2가 실행되었습니다.<br>");
+        }
+        func2();
+
+        //화살표 함수 
+        const func2 = () =>{
+            document.write("func2가 실행되었습니다.<br>");
+        }
+        func2();
+
+        //리턴값이 있는 함수
+        function func3(){
+            const str = "func3이 실행되었습니다.<br>";
+            return str;
+        }
+        document.write(func3());
+
+        //화살표 함수
+        func3 = () => {
+            const str = "func3이 실행되었습니다.<br>";
+            return str;
+        }
+        document.write(func3());
+
+        
+
+
+    </script>
+</body>
+</html>

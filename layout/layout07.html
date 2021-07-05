@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout07</title>
+    <style>
+        * {
+            /*여백 초기화*/
+            padding: 0;
+            margin: 0;
+        }
+
+        #wrap {
+            width: 100%;
+            text-align: center;
+            font-size: 60px;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+
+        }
+
+        #header {
+            width: 100%;
+            height: 100px;
+            background-color: #f3e5f5;
+            text-height: 100px;
+        }
+
+        #contents {
+            width: 100%;
+            height: 2000px;
+            background-color: #e1bee7;
+            text-height: 2000px;
+        }
+
+        #contents #con1 {
+            width: 100%;
+            height: 1000px;
+            background-color: #ba68c8;
+            text-height: 1000px;
+        }
+
+        #contents #con2 {
+            width: 100%;
+            height: 500px;
+            background-color: #ab47bc;
+            text-height: 500px;
+        }
+
+        #contents #con3 {
+            width: 100%;
+            height: 500px;
+            background-color: #9c27b0;
+            text-height: 500px;
+        }
+
+        #footer {
+            width: 100%;
+            height: 100px;
+            background-color: #ce93d8;
+            text-height: 100px;
+        }
+
+        .container {
+            width: 1600px;
+            height: inherit;
+            background-color: rgba(0, 0, 0, 0.4);
+            margin: 0 auto;
+            text-height: auto;
+            /* 위 아래 0 px , 좌우 auto */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <header id="header">
+            <div class="container">header</div>
+        </header>
+
+        <section id="contents">
+            <section id="con1">
+                <div class="container">con1</div>
+            </section>
+
+            <section id="con2">
+                <div class="container">con2</div>
+            </section>
+
+            <section id="con3">
+                <div class="container">con3</div>
+            </section>
+        </section>
+
+        <footer id="footer">
+            <div class="container">footer</div>
+        </footer>
+    </div>
+    </div>
+</body>
+
+</html>

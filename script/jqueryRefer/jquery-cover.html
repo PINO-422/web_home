@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GmarketSansLight';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GmarketSansBold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background: #E5E5E5;
+        }
+
+        #header {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        #header {
+            height: 100px;
+            border-bottom: 3px solid #7B7B7B;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #e5e5e5;
+        }
+
+        #header .container {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+
+        #header strong {
+            font-family: 'GmarketSansMedium';
+            font-size: 24px;
+        }
+
+        #header p {
+            font-family: 'GmarketSansLight';
+            font-size: 24px;
+        }
+
+        #main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #main .text {
+            font-size: 8vw;
+            text-align: center;
+            font-family: 'GmarketSansBold';
+            line-height: 1.2;
+            margin-top: 1px;
+        }
+
+        #main .text span {
+            display: block;
+            font-family: 'GmarketSansMedium';
+        }
+
+        #main .text strong {
+            display: block;
+            color: #63d77d;
+            font-size: 10vw;
+        }
+
+
+        #main .class {
+            text-align: center;
+            margin-top: 5vh;
+            padding:  0 20%;
+        }
+
+        #main .class a {
+            text-decoration: none;
+            color: #7b7b7b;
+            border: 1px solid #7b7b7b;
+            border-radius: 50px;
+            padding: 5px 10px;
+            font-family: 'GmarketSansLight';
+            padding: 5px 10px;
+            font-size: 16px;
+            line-height: 2.4;
+        }
+
+        #main .class a:hover{
+            background: #000;
+            color: #fff;
+            border-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <strong>자바스크립트(jQuery)</strong>
+                <p>프론트 엔드 조재형</p>
+            </div>
+        </header>
+        <main id="main">
+            <section class="content">
+                <div class="text">
+                    <span>happy</span>
+                    <strong>jQuery</strong>
+                    <span>class</span>
+                </div>
+                <div class="class">
+                    <a href="jquery05_attr.html">.attr()</a>
+                    <a href="jquery06_addClass.html">.addClass()</a>
+                    <a href="jquery07_css.html">.css()</a>
+                    <a href="jquery08_append.html">.append()</a>
+                    <a href="jquery09_animation.html">animation</a>
+                    <a href="jquery10_animation2.html">.animate</a>
+                    <a href="jquery11_dimension.html">dimension</a>
+                    <a href="">.offset</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

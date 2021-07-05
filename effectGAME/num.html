@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Cafe24SsurroundAir';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Cafe24Ssurround';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background:url(./svg/bg.jpg)no-repeat center center;
+            background-size: cover;
+        }
+
+        .title {
+            padding: 20px;
+            font-family: 'Cafe24SsurroundAir';
+            color: #fff;
+        }
+
+        .title h1 {
+            font-family: 'Cafe24Ssurround';
+            padding-bottom: 20px;
+            font-size: 40px
+        }
+
+
+       
+
+        .audio {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .audio .btn-sound {
+            width: 24px;
+            height: 24px;
+            background: #000;
+            border: 0;
+            background-image: url(./svg/icon-sound-on.svg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .audio .btn-sound:active {
+            transform: translateY(1px);
+        }
+
+        .audio .btn-sound::before {
+            content: '';
+            position: absolute;
+            top: 8px; left: -3px;
+            width: 120%;
+            height: 2px;
+            background: #000;
+            transform: rotate(35deg);
+        }
+
+        .audio .btn-sound.is-playing::before {
+            display: none;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <article class="audio">
+        <button class="btn-sound"></button>
+        <audio id="theme-song" src="./svg/y2mate.com - 01  Log In_96kbps.mp3" loop="loop"></audio>
+    </article>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        const $main = $("main"),
+              $card = $(".card"),
+              $btnSound = $(".btn-sound"),
+              $turns = $(".turns span"), 
+              $attempts = $(".attempts span"), 
+              $wins = $(".wins span"), 
+
+              $themsSong = $("#theme-song")[0],
+              dataMatch = "data-matched",
+              dataType = "data-type",
+              selectedClass = "is-selected",
+              playSoundClass ="is-playing",
+              visibleClass = "is-visible",
+              lastTurnClass = "last-turn",
+              timeoutLength = 900;
+
+        let sound = [
+        "./svg/y2mate.com - 01  Log In_96kbps.mp3",
+        "./svg/y2mate.com - 01  Log In_96kbps.mp3",
+        "./svg/y2mate.com - 01  Log In_96kbps.mp3"
+        ],
+        soundMatch = new Audio(sound[0]),    
+        soundNoMatch = new Audio(sound[1]),    
+        soundSuccess = new Audio(sound[2]),
+        turnsCount = 2,   //기회 횟수
+        attempsCount = 0, //시도횟수
+        winCount = 0,     //우승횟수
+        card1,card2,msg;    
+
+        //음악아이콘
+        $btnSound.on("click",function(){
+            $(this).toggleClass(playSoundClass);
+            if($(this).hasClass(playSoundClass)){
+                $themsSong.play();
+            }else{
+                $themsSong.pause();
+            }
+        }); 
+
+</script>
+</body>
+
+</html>

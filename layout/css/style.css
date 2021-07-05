@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#wrap {
+    width: 100%;
+    background-color: rgb(236, 146, 146);
+}
+
+#header {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(235, 111, 111);
+}
+
+#nav {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(220, 68, 30);
+}
+
+#content {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(221, 190, 50);
+}
+
+#cont1 {
+    width: 1000px;
+    height: 300px;
+    background-color: rgb(236, 240, 8);
+}
+
+#con1 {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(138, 103, 103);
+}
+
+#con2 {
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+
+}
+
+#cont2 {
+    width: 1000px;
+    height: 300px;
+    background-color: rgb(226, 13, 13);
+}
+
+#footer {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(110, 238, 98);
+}
+
+#foots {
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+
+}
+
+.container {
+    width: 1000px;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+.container1 {
+    width: 190px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    float: left;
+    margin-top: 30px;
+}
+
+.container2 {
+    width: 190px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    float: left;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.container3 {
+    width: 190px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    float: left;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.container4 {
+    width: 190px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+    float: right;
+}
+
+.co1 {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    background-color: #fff;
+}
+
+.co1 ul {}
+
+
+.co2 {
+    width: 500px;
+    height: 100px;
+}
+
+h4 {
+    color: #0b27dc;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+#con1 .co1 ul {}
+
+li {
+    margin-left: 40px;
+    list-style: square;
+    color: #51a9e1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+
+}
+
+.the {
+    position: absolute;
+    top: 20px;
+    left: 430px;
+    color: #0b27dc;
+
+}

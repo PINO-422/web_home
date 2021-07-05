@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>javascript10</title>
+</head>
+
+<body>
+    <script>
+        /* //배열
+        const arr1 = new Array();
+        arr1[0] = 100;
+        arr1[1] = 200;
+        arr1[2] = "javascript";
+        
+        document.write(arr1[0] + arr1[1], "<br>");
+        document.write(arr1[1] + arr1[2], "<br>"); //숫자도 문자로 인식함
+        
+        //배열 
+        const arr2 = new Array(100,200,"javascript");
+        document.write(arr2[0] * arr2[1], "<br>");
+        
+        //배열
+        const arr3 = [];
+        arr3[0] = 100;
+        arr3[1] = 200;
+        arr3[2] = "javascript";
+        
+        document.write(arr3[0] ,"<br>");
+        
+        //배열
+        const arr4 = [100, 200, "javascript"];
+        
+        document.write(arr4[0] ,"<br>");
+        
+        
+        //2차 배열
+        const arr5= [100, 200, ["javascript","jqueyr"]];
+        
+        //jquery 출력하시오
+        document.write(arr5[0],"<br>");
+        document.write(arr5[1],"<br>");
+        
+        document.write(arr5[2][0],"<br>");
+        document.write(arr5[2][1],"<br>");*/
+
+        //------------------------------------------------------------
+
+        const arr1 = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+        for (let i = 0; i < arr1.length; i++) {
+            document.write(arr1[i], "<br>");
+        }
+        
+        
+        //배열 불러오기(for)
+        const arr6 = [100, 200, 300, 400, 500];
+        for (let i = 0; i < arr6.length; i++) {
+            document.write(arr6[i], "<br>");
+        }
+
+
+        //배열 불러오기(forEach)
+        const arr7 = [1000, 2000, 3000, 4000, 5000];
+
+        arr7.forEach(function(elem) {
+            document.write(elem, "<br>")
+        });
+
+
+        //배열 불러오기(map)
+        const arr8 = [10000, 20000, 30000, 40000, 50000];
+
+        arr8.map(function(ma) {
+            document.write(ma, "<br>")
+        });
+
+        //배열 불러오기(for in문)
+
+        //배열 불러오기(for of문)
+
+    </script>
+</body>
+
+</html>

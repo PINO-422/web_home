@@ -1,0 +1,659 @@
+<?php
+    include '../connect/connect.php';
+    include '../connect/session.php';
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Site</title>
+    
+        <!-- meta -->
+        <?php
+            include "../component/meta.php"
+        ?>
+        <!-- //meta -->
+    </head>
+
+<body>
+    <main id="main">
+
+    </main>
+    <!-- skip -->
+    <div id="skip">
+        <a href="#main">콘텐츠 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+  <!-- header -->
+  <?php
+  include "../component/header.php"
+?>
+<!-- //header -->
+
+    <!-- main -->
+    <main id="main">
+        <section id="jsCont">
+            <div class="container">
+                <div class="main-title">
+                    <h1><strong>SCRIPT</strong><em>JAVASCRIPT</em></h1>
+                </div>
+                <div class="js-cont">
+                    <div class="js-box js-box01">
+                        <div class="js__motherbox">
+                            <div class="js__img js__img01 active">
+                                <img src="../assets/images/video02.png" alt="이미지1">
+                            </div>
+                            <div class="js__img js__img02">
+                                <img src="../assets/images/video01.png" alt="이미지2">
+                            </div>
+                            <div class="js__img js__img03">
+                                <img src="../assets/images/video02.png" alt="이미지3">
+                            </div>
+                            <div class="js__img js__img04">
+                                <img src="../assets/images/video01.png" alt="이미지4">
+                            </div>
+                            <div class="js__img js__img05">
+                                <img src="../assets/images/video02.png" alt="이미지5">
+                            </div>
+                            <div class="js__img js__img06">
+                                <img src="../assets/images/video01.png" alt="이미지6">
+                            </div>
+                            <div class="js__img js__img07">
+                                <img src="../assets/images/video02.png" alt="이미지7">
+                            </div>
+                            <div class="js__img js__img08">
+                                <img src="../assets/images/video01.png" alt="이미지8">
+                            </div>
+                            <div class="js__img js__img09">
+                                <img src="../assets/images/video02.png" alt="이미지9">
+                            </div>
+                            <div class="js__img js__img10">
+                                <img src="../assets/images/video01.png" alt="이미지10">
+                            </div>
+                        </div>
+                        <h2>animationRequestFrame</h2>
+                        <div class="js__desc">
+                            <div class="js_descText">
+                                <div class="motherbox motherbox1 active">
+                                    <div class="box1">
+                                        <p>
+                                            레이아웃은 사이트를 만드는데 가장 기본적인 요소입니다. 레이아웃만 제대로 만들 수 있다면 사이트의 제작에 50%는 끝나다고 보셔도
+                                            됩니다.
+                                            그만큼
+                                            레이아웃 제작은 상당히 중요합니다. 사이트의 제작에 50%는 끝나다고 보셔도 됩니다. 그만큼 레이아웃 제작은 상당히 중요합니다.
+                                        </p>
+                                    </div>
+                                    <div class="box2">
+                                        <p>
+                                            레이아웃은 사이트를 만드는데 가장 기본적인 요소입니다. 레이아웃만 제대로 만들 수 있다면 사이트의 제작에 50%는 끝나다고 보셔도
+                                            됩니다.
+                                            그만큼
+                                            레이아웃 제작은 상당히 중요합니다. 사이트의 제작에 50%는 끝나다고 보셔도 됩니다. 그만큼 레이아웃 제작은 상당히 중요합니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox2">
+                                    <div class="box3">
+                                        <p>두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다.
+                                            두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box4">
+                                        <p>두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다.
+                                            두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox3">
+                                    <div class="box5">
+                                        <p>세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다.
+                                            세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box6">
+                                        <p>세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다.
+                                            세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox4">
+                                    <div class="box7">
+                                        <p>네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다.
+                                            네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box8">
+                                        <p>네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다.
+                                            네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox5">
+                                    <div class="box9">
+                                        <p>다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다.
+                                            다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box10">
+                                        <p>다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다.
+                                            다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox6">
+                                    <div class="box10">
+                                        <p>여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다.
+                                            여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box11">
+                                        <p>여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다.
+                                            여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox7">
+                                    <div class="box12">
+                                        <p>일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다.
+                                            일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box13">
+                                        <p>일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다.
+                                            일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox8">
+                                    <div class="box14">
+                                        <p>여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다.
+                                            여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box15">
+                                        <p>여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다.
+                                            여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox9">
+                                    <div class="box16">
+                                        <p>아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다.
+                                            아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box17">
+                                        <p>아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다.
+                                            아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox10">
+                                    <div class="box18">
+                                        <p>열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다.
+                                            열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box19">
+                                        <p>열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다.
+                                            열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="js_menu js_menu01">
+                                <ul>
+                                    <li><a href="#" class="active">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                    <li><a href="#">10</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="js-box js-box02">
+                        <div class="js__motherbox">
+                            <div class="js__img js__img02 active">
+                                <img src="../assets/images/video02.png" alt="이미지1">
+                            </div>
+                            <div class="js__img js__img02">
+                                <img src="../assets/images/video01.png" alt="이미지2">
+                            </div>
+                            <div class="js__img js__img03">
+                                <img src="../assets/images/video02.png" alt="이미지3">
+                            </div>
+                            <div class="js__img js__img04">
+                                <img src="../assets/images/video01.png" alt="이미지4">
+                            </div>
+                            <div class="js__img js__img05">
+                                <img src="../assets/images/video02.png" alt="이미지5">
+                            </div>
+                            <div class="js__img js__img06">
+                                <img src="../assets/images/video01.png" alt="이미지6">
+                            </div>
+                            <div class="js__img js__img07">
+                                <img src="../assets/images/video02.png" alt="이미지7">
+                            </div>
+                            <div class="js__img js__img08">
+                                <img src="../assets/images/video01.png" alt="이미지8">
+                            </div>
+                            <div class="js__img js__img09">
+                                <img src="../assets/images/video02.png" alt="이미지9">
+                            </div>
+                            <div class="js__img js__img10">
+                                <img src="../assets/images/video01.png" alt="이미지10">
+                            </div>
+                        </div>
+                        <h2>animationRequestFrame</h2>
+                        <div class="js__desc">
+                            <div class="js_descText">
+                                <div class="motherbox motherbox1 active">
+                                    <div class="box1">
+                                        <p>
+                                            레이아웃은 사이트를 만드는데 가장 기본적인 요소입니다. 레이아웃만 제대로 만들 수 있다면 사이트의 제작에 50%는 끝나다고 보셔도
+                                            됩니다.
+                                            그만큼
+                                            레이아웃 제작은 상당히 중요합니다. 사이트의 제작에 50%는 끝나다고 보셔도 됩니다. 그만큼 레이아웃 제작은 상당히 중요합니다.
+                                        </p>
+                                    </div>
+                                    <div class="box2">
+                                        <p>
+                                            레이아웃은 사이트를 만드는데 가장 기본적인 요소입니다. 레이아웃만 제대로 만들 수 있다면 사이트의 제작에 50%는 끝나다고 보셔도
+                                            됩니다.
+                                            그만큼
+                                            레이아웃 제작은 상당히 중요합니다. 사이트의 제작에 50%는 끝나다고 보셔도 됩니다. 그만큼 레이아웃 제작은 상당히 중요합니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox2">
+                                    <div class="box3">
+                                        <p>두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다.
+                                            두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box4">
+                                        <p>두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다.
+                                            두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox3">
+                                    <div class="box5">
+                                        <p>세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다.
+                                            세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box6">
+                                        <p>세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다.
+                                            세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox4">
+                                    <div class="box7">
+                                        <p>네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다.
+                                            네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box8">
+                                        <p>네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다.
+                                            네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox5">
+                                    <div class="box9">
+                                        <p>다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다.
+                                            다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box10">
+                                        <p>다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다.
+                                            다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox6">
+                                    <div class="box10">
+                                        <p>여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다.
+                                            여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box11">
+                                        <p>여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다.
+                                            여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox7">
+                                    <div class="box12">
+                                        <p>일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다.
+                                            일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box13">
+                                        <p>일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다.
+                                            일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox8">
+                                    <div class="box14">
+                                        <p>여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다.
+                                            여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box15">
+                                        <p>여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다.
+                                            여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox9">
+                                    <div class="box16">
+                                        <p>아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다.
+                                            아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box17">
+                                        <p>아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다.
+                                            아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox10">
+                                    <div class="box18">
+                                        <p>열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다.
+                                            열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box19">
+                                        <p>열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다.
+                                            열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="js_menu js_menu02">
+                                <ul>
+                                    <li><a href="#" class="active">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                    <li><a href="#">10</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="js-box js-box03">
+                        <div class="js__motherbox">
+                            <div class="js__img js__img01 active">
+                                <img src="../assets/images/video02.png" alt="이미지1">
+                            </div>
+                            <div class="js__img js__img02">
+                                <img src="../assets/images/video01.png" alt="이미지2">
+                            </div>
+                            <div class="js__img js__img03">
+                                <img src="../assets/images/video02.png" alt="이미지3">
+                            </div>
+                            <div class="js__img js__img04">
+                                <img src="../assets/images/video01.png" alt="이미지4">
+                            </div>
+                            <div class="js__img js__img05">
+                                <img src="../assets/images/video02.png" alt="이미지5">
+                            </div>
+                            <div class="js__img js__img06">
+                                <img src="../assets/images/video01.png" alt="이미지6">
+                            </div>
+                            <div class="js__img js__img07">
+                                <img src="../assets/images/video02.png" alt="이미지7">
+                            </div>
+                            <div class="js__img js__img08">
+                                <img src="../assets/images/video01.png" alt="이미지8">
+                            </div>
+                            <div class="js__img js__img09">
+                                <img src="../assets/images/video02.png" alt="이미지9">
+                            </div>
+                            <div class="js__img js__img10">
+                                <img src="../assets/images/video01.png" alt="이미지10">
+                            </div>
+                        </div>
+                        <h2>animationRequestFrame</h2>
+                        <div class="js__desc">
+                            <div class="js_descText">
+                                <div class="motherbox motherbox1 active">
+                                    <div class="box1">
+                                        <p>
+                                            레이아웃은 사이트를 만드는데 가장 기본적인 요소입니다. 레이아웃만 제대로 만들 수 있다면 사이트의 제작에 50%는 끝나다고 보셔도
+                                            됩니다.
+                                            그만큼
+                                            레이아웃 제작은 상당히 중요합니다. 사이트의 제작에 50%는 끝나다고 보셔도 됩니다. 그만큼 레이아웃 제작은 상당히 중요합니다.
+                                        </p>
+                                    </div>
+                                    <div class="box2">
+                                        <p>
+                                            레이아웃은 사이트를 만드는데 가장 기본적인 요소입니다. 레이아웃만 제대로 만들 수 있다면 사이트의 제작에 50%는 끝나다고 보셔도
+                                            됩니다.
+                                            그만큼
+                                            레이아웃 제작은 상당히 중요합니다. 사이트의 제작에 50%는 끝나다고 보셔도 됩니다. 그만큼 레이아웃 제작은 상당히 중요합니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox2">
+                                    <div class="box3">
+                                        <p>두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다.
+                                            두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box4">
+                                        <p>두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다.
+                                            두 번째 텍스트입니다. 두 번째 텍스트입니다. 두 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox3">
+                                    <div class="box5">
+                                        <p>세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다.
+                                            세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box6">
+                                        <p>세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다.
+                                            세 번째 텍스트입니다. 세 번째 텍스트입니다. 세 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox4">
+                                    <div class="box7">
+                                        <p>네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다.
+                                            네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box8">
+                                        <p>네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다.
+                                            네 번째 텍스트입니다. 네 번째 텍스트입니다. 네 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox5">
+                                    <div class="box9">
+                                        <p>다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다.
+                                            다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box10">
+                                        <p>다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다.
+                                            다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다. 다섯 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox6">
+                                    <div class="box10">
+                                        <p>여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다.
+                                            여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box11">
+                                        <p>여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다.
+                                            여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다. 여섯 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox7">
+                                    <div class="box12">
+                                        <p>일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다.
+                                            일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box13">
+                                        <p>일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다.
+                                            일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다. 일곱 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox8">
+                                    <div class="box14">
+                                        <p>여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다.
+                                            여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box15">
+                                        <p>여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다.
+                                            여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다. 여덟 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox9">
+                                    <div class="box16">
+                                        <p>아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다.
+                                            아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box17">
+                                        <p>아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다.
+                                            아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다. 아홉 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="motherbox motherbox10">
+                                    <div class="box18">
+                                        <p>열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다.
+                                            열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="box19">
+                                        <p>열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다.
+                                            열 번째 텍스트입니다. 열 번째 텍스트입니다. 열 번째 텍스트입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="js_menu js_menu03">
+                                <ul>
+                                    <li><a href="#" class="active">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                    <li><a href="#">10</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- //main -->
+    <!-- footer -->
+    <footer id="footerContact">
+        <div class="footer-contact">
+            <p>Let's create something new</p>
+            <h3>LET'S GET IN<br>TOUCH</h3>
+            <a href="contact.html" class="contact">Contact Me</a>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+    <script>
+        const tabMenu01 = document.querySelectorAll(".js-box01 .js_menu01 > ul > li > a")
+        const tabCont01 = document.querySelectorAll(".js-box01 .js_descText > div")
+        const tabImg01 = document.querySelectorAll(".js-box01 .js__motherbox > .js__img")
+        tabMenu01.forEach((elem, index) => {
+            elem.addEventListener("click", e => {
+                e.preventDefault();
+                tabMenu01.forEach((elem) => {
+                    elem.classList.remove("active");
+                });
+                elem.classList.add("active");
+                tabCont01.forEach(elem => {
+                    elem.classList.remove("active");
+                });
+                tabImg01.forEach(elem => {
+                    elem.classList.remove("active");
+                });
+                tabCont01[index].classList.add("active");
+                tabImg01[index].classList.add("active");
+            });
+        });
+        const tabMenu02 = document.querySelectorAll(".js-box02 .js_menu02 > ul > li > a")
+        const tabCont02 = document.querySelectorAll(".js-box02 .js_descText > div")
+        const tabImg02 = document.querySelectorAll(".js-box02 .js__motherbox > .js__img")
+        tabMenu02.forEach((elem, index) => {
+            elem.addEventListener("click", e => {
+                e.preventDefault();
+                tabMenu02.forEach((elem) => {
+                    elem.classList.remove("active");
+                });
+                elem.classList.add("active");
+                tabCont02.forEach(elem => {
+                    elem.classList.remove("active");
+                });
+                tabImg02.forEach(elem => {
+                    elem.classList.remove("active");
+                });
+                tabCont02[index].classList.add("active");
+                tabImg02[index].classList.add("active");
+            });
+        });
+        const tabMenu03 = document.querySelectorAll(".js-box03 .js_menu03 > ul > li > a")
+        const tabCont03 = document.querySelectorAll(".js-box03 .js_descText > div")
+        const tabImg03 = document.querySelectorAll(".js-box03 .js__motherbox > .js__img")
+        tabMenu03.forEach((elem, index) => {
+            elem.addEventListener("click", e => {
+                e.preventDefault();
+                tabMenu03.forEach((elem) => {
+                    elem.classList.remove("active");
+                });
+                elem.classList.add("active");
+                tabCont03.forEach(elem => {
+                    elem.classList.remove("active");
+                });
+                tabImg03.forEach(elem => {
+                    elem.classList.remove("active");
+                });
+                tabCont03[index].classList.add("active");
+                tabImg03[index].classList.add("active");
+            });
+        });
+    </script>

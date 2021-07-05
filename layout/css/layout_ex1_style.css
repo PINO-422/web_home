@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .6);
+}
+
+#wrap {}
+
+/*해더*/
+#header {
+    width: 100%;
+    background: #fff;
+    height: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    overflow: hidden;
+}
+
+.header .header_rogo {
+    flex-basis: 20%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.header .header_rogo img {
+    float: left;
+    padding-top: 20px;
+}
+
+.header .header_rogo p {
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: left;
+    display: flex;
+    padding: -5px -20px 0 20px;
+}
+
+.header .header_navi {
+    font-size: 18px;
+    color: rgba(0, 0, 0, .6);
+    flex-basis: 60%;
+    text-align: center;
+
+}
+
+.header .header_navi li {
+    list-style: none;
+    display: inline;
+    padding: 15px;
+    line-height: 20px;
+
+}
+
+.header .header_login {
+    /* flex-basis: 20%;
+     */
+    flex-basis: 20%;
+    text-align: right;
+
+}
+
+.header .header_login p {
+    display: inline-block;
+    border-radius: 20px;
+    border: 1px solid #000;
+    padding: 5px 15px;
+
+}
+
+
+/*네비*/
+#nav {
+    width: 100%;
+    height: 60px;
+    background: rgb(212, 218, 214);
+}
+
+#nav .nav {
+    text-align: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, .6);
+    line-height: 60px;
+}
+
+#nav .nav li {
+    display: inline;
+    padding: 15px;
+}
+
+
+
+
+
+/*컨텐츠*/
+#content {
+    width: 100%;
+    /* height: 100px; */
+}
+
+.content1 {
+    background: url(../img/banner-bg2.png)no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+.content1 p {
+    display: inline-block;
+    margin: 35px;
+    font-size: 20px;
+    border-bottom: 4px solid #fff;
+    line-height: 40px;
+}
+
+.content1 h1 {
+    font-size: 50px;
+    margin: 35px;
+
+}
+
+.content1 h5 {
+    font-size: 22px;
+    margin: 15px;
+}
+
+.content1 h6 {
+    font-size: 18px;
+}
+
+.content1 a {
+    font-size: 20px;
+    color: rgb(69, 107, 196);
+    border: 1px solid rgb(74, 97, 211);
+    border-radius: 30px;
+    padding: 20px 55px;
+    margin: 30px;
+    display: inline-block;
+    background: #fff;
+}
+
+.content2 {
+    overflow: hidden;
+    padding: 110px 0 112px;
+    background: #f1f3ff
+}
+
+.content2 .cont2_box1 {
+    /* background-color: rgb(130, 21, 21); */
+    width: 50%;
+    float: left;
+
+}
+
+.content2 .cont2_box1 .box1_pic img {
+    width: 599px;
+    height: 439px;
+    float: right;
+}
+
+.content2 .cont2_box2 {
+    /* background-color: rgb(21, 48, 130); */
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.content2 .cont2_box2 .box2_conbox1 {
+    width: 450px;
+    height: 130px;
+    border: 1px solid #eceefd;
+    border-radius: 15px;
+    background-color: #fff;
+    margin-bottom: 20px;
+
+
+}
+
+.content2 .cont2_box2 P {
+    padding-top: 40px;
+    display: inline-block;
+    /* line-height: 130px; */
+}
+
+.content2 .cont2_box2 a{
+    color: #1d0c9b;
+    font-size: 25px;
+    float: right;
+    padding-top: 50px;
+}
+
+
+
+.content2 .cont2_box2 .box2_conbox2 {
+    width: 450px;
+    height: 130px;
+    border: 1px solid #eceefd;
+    border-radius: 15px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.content2 .cont2_box2 .box2_conbox3 {
+    width: 450px;
+    height: 130px;
+    border: 1px solid #eceefd;
+    border-radius: 15px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+
+/*푸터*/
+#footer {
+    width: 100%;
+    background: rgb(17, 17, 17);
+    height: 100px;
+    color: #fff;
+    text-align: center;
+}
+
+#footer p {
+    border-bottom: 1px solid #fff;
+}
+
+#footer a {
+    display: inline-block;
+    margin: 10px;
+    color: #fff;
+    border: 1px solid #48494a;
+    ;
+    background-color: #48494a;
+}
+
+
+
+/*컨텐츠*/
+.container {
+    max-width: 1600px;
+    width: 100%;
+    height: inherit;
+    /* background: rgba(0, 0, 0, 0.2); */
+    margin: 0 auto;
+}
